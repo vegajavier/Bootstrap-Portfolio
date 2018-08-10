@@ -35,24 +35,28 @@
   <div id="main-container" class="container">
     <section class="main-section">
       <h1>Contact</h1>
+    <form id="contact-form">
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1">Name</span>
+        </div>
+        <input type="text" class="form-control" placeholder="Derek Jeter" aria-label="Username" aria-describedby="basic-addon1">
+      </div>
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Email" aria-label="Recipient's username" aria-describedby="basic-addon2">
+        <div class="input-group-append">
+          <span class="input-group-text" id="basic-addon2">@example.com</span>
+        </div>
+      </div>      
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text">Message</span>
+        </div>
+        <textarea class="form-control" aria-label="With textarea"></textarea>
+      </div>
 
-      <form id="contact-form">
-        <ul>
-          <li>
-            <label for="name"> Name </label>
-            <input type="text" id="name" name="name" placeholder="Tom Cruise" required="required">
-          </li>
-          <li>
-            <label for="email"> Email </label>
-            <input type="email" id="email" name="email" placeholder="example@yahoo.com" required="required">
-          </li>
-          <li>
-            <label for="message"> Message </label>
-            <textarea id="message" name="message" required="required"></textarea>
-          </li>
-        </ul>
-        <input type="submit">
-      </form>
+      
+    </form>
 
     </section>
 
